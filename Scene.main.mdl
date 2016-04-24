@@ -1,0 +1,112 @@
+INCLUDE_FILE = "pore_scale"
+
+pore_scale = 1-EXP(-(abs_time/10)*0.1)
+
+CHECKPOINT_INFILE = "chkpt_pos"
+CHECKPOINT_OUTFILE = "chkpt_pos"
+CHECKPOINT_ITERATIONS = check_time
+
+
+INCLUDE_FILE = "Scene.parameters.mdl"
+
+ITERATIONS = 3000
+TIME_STEP = 1e-06
+VACANCY_SEARCH_DISTANCE = 10
+
+INCLUDE_FILE = "Scene.initialization.mdl"
+
+
+
+INCLUDE_FILE = "Scene.molecules.mdl"
+
+INCLUDE_FILE = "Scene.surface_classes.mdl"
+
+INCLUDE_FILE = "Scene.reactions.mdl"
+
+INCLUDE_FILE = "Scene.geometry.mdl"
+
+INCLUDE_FILE = "Scene.mod_surf_regions.mdl"
+
+INSTANTIATE Scene OBJECT
+{
+  Cubeback OBJECT Cubeback {}
+  Cubefront OBJECT Cubefront {}
+  Cubeleft OBJECT Cubeleft {}
+  Cuberight OBJECT Cuberight {}
+  Cubetop OBJECT Cubetop {}
+  block1 OBJECT block1 {}
+  block2 OBJECT block2 {}
+  block3 OBJECT block3 {}
+  block4 OBJECT block4 {}
+  blockback OBJECT blockback {}
+  blockgreat1 OBJECT blockgreat1 {}
+  blockgreat2 OBJECT blockgreat2 {}
+  blockgreat3 OBJECT blockgreat3 {}
+  blockgreat4 OBJECT blockgreat4 {}
+  blockpsd2 OBJECT blockpsd2 {}
+  blockpsd3 OBJECT blockpsd3 {}
+  blockpsd4 OBJECT blockpsd4 {}
+  blockpsd5 OBJECT blockpsd5 {}
+  blockpsdout1 OBJECT blockpsdout1 {}
+  blockpsdout2 OBJECT blockpsdout2 {}
+  blockpsdout3 OBJECT blockpsdout3 {}
+  blockpsdout4 OBJECT blockpsdout4 {}
+  pore OBJECT pore {}
+  psd OBJECT psd {}
+  psd2 OBJECT psd2 {}
+  psd3 OBJECT psd3 {}
+  psd4 OBJECT psd4 {}
+  psd5 OBJECT psd5 {}
+  vesicle OBJECT vesicle {}
+  transmitter_release RELEASE_SITE
+  {
+   SHAPE = SPHERICAL
+   LOCATION = [0, 0, 0.039]
+   SITE_DIAMETER = 0
+   MOLECULE = Glu
+   NUMBER_TO_RELEASE = n
+   RELEASE_PROBABILITY = 1
+  }
+  AMPA_C0_psd RELEASE_SITE
+  {
+   SHAPE = Scene.psd[psdnonpermeable]
+   MOLECULE = AMPAR_C0'
+   NUMBER_TO_RELEASE = 80
+   RELEASE_PROBABILITY = 1
+  }
+  AMPA_C0_psd2 RELEASE_SITE
+  {
+   SHAPE = Scene.psd2[psd2nonpermeable]
+   MOLECULE = AMPAR_C0'
+   NUMBER_TO_RELEASE = 80
+   RELEASE_PROBABILITY = 1
+  }
+  AMPA_C0_psd3 RELEASE_SITE
+  {
+   SHAPE = Scene.psd3[psd3nonpermeable]
+   MOLECULE = AMPAR_C0'
+   NUMBER_TO_RELEASE = 80
+   RELEASE_PROBABILITY = 1
+  }
+  AMPA_C0_psd4 RELEASE_SITE
+  {
+   SHAPE = Scene.psd4[psd4nonpermeable]
+   MOLECULE = AMPAR_C0'
+   NUMBER_TO_RELEASE = 80
+   RELEASE_PROBABILITY = 1
+  }
+  AMPA_C0_psd5 RELEASE_SITE
+  {
+   SHAPE = Scene.psd5[psd5nonpermeable]
+   MOLECULE = AMPAR_C0'
+   NUMBER_TO_RELEASE = 80
+   RELEASE_PROBABILITY = 1
+  }
+}
+
+sprintf(seed,"%05g",SEED)
+
+INCLUDE_FILE = "Scene.viz_output.mdl"
+
+INCLUDE_FILE = "Scene.rxn_output.mdl"
+

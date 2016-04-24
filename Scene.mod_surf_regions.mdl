@@ -1,0 +1,164 @@
+MODIFY_SURFACE_REGIONS
+{
+  pore[permeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  vesicle[permeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  psd[psdpermeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  psd2[psd2permeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  psd3[psd3permeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  psd4[psd4permeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  psd5[psd5permeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  block1[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  block2[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  block3[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  block4[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  blockpsd2[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  blockpsd3[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  blockpsd4[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  blockpsd5[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  blockpsd2[permeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  blockpsd3[permeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  blockpsd4[permeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  blockpsd5[permeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  blockgreat1[permeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  blockgreat2[permeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  blockgreat3[permeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  blockgreat4[permeable]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  blockgreat1[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  blockgreat2[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  blockgreat3[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  blockgreat4[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  blockback[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  Cubeleft[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  Cubeback[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  Cubefront[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  Cuberight[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  Cubetop[nonpermeable]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  blockpsdout1[nonpermeablepsdout]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  blockpsdout1[permeablepsdout]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  blockpsdout2[permeablepsdout]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  blockpsdout3[nonpermeablepsdout]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  blockpsdout3[permeablepsdout]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+  blockpsdout4[nonpermeablepsdout]
+  {
+    SURFACE_CLASS = reflect_Glu
+  }
+  blockpsdout4[permeablepsdout]
+  {
+    SURFACE_CLASS = transp_Glu
+  }
+}
+

@@ -1,0 +1,34 @@
+import sys
+
+simid=sys.argv[1]
+simrun=sys.argv[2]
+
+print "Simulation running with seed: ", simid, simrun
+
+file=open("pore_scale",'w')
+file.write("check_time = 5\n")
+file.write("abs_time=5\n")
+file.close()
+
+
+!rm "-f" "chkpt_pos"
+
+for chk in range(1,61): #we need to do it 60 times than start simulation.
+	filename="calyx_"+str(simid)+"_"+str(simrun)+".mdl"
+	print filename
+
+	if(chk<60):
+		!mcell3.3 "-seed" {simrun+simid} {filename}
+		file=open("pore_scale",'w')
+		file.write("check_time = 5\n")
+		at = chk*5+5
+		file.write("abs_time =" + str(at) +"\n")
+		file.close()
+	else:
+		file=open("pore_scale",'w')
+		file.write("check_time = 3000\n")
+		file.write("abs_time = 3000\n")
+		file.close()
+		print "kkoo"
+		!mcell3.3 "-seed" {simrun+simid} {filename}
+

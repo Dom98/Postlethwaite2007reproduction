@@ -1,0 +1,22 @@
+/* DEFINE PARAMETERS */
+tf = 1.000000    /* P2 Description  */
+tfd = 1.000000    /* P9 Description  */
+Rb = 10000000.000000    /* P10 Description  */
+Ru1 = 8000.000000    /* P11 Description  */
+Ro1 = 20000.000000    /* P12 Description  */
+Rc1 = 10000.000000    /* P13 Description  */
+Rd0 = 4000.000000    /* P14 Description  */
+Rd1 = 4000.000000    /* P15 Description  */
+Rr1 = 15.000000    /* P16 Description  */
+Rd2 = 10000000.000000    /* P17 Description  */
+Rr2 = 8000.000000    /* P18 Description  */
+Diffusionconstant = 0.000003    /* diffusion constant  */
+vesiclesize = 0.032000    /* vesicle size  */
+fpDiameter = 0.008000    /* P21 Description  */
+fpLength = 0.012000    /* P22 Description  */
+Rex = 0.317000    /* P23 Description  */
+cleft = 0.028000    /* P24 Description  */
+AMPAR_number = 80.000000    /* P25 Description  */
+n = 6000.000000    /* P26 Description  */
+vesicle_pos = 0.000000    /* P27 Description  */
+

@@ -1,0 +1,17 @@
+REACTION_DATA_OUTPUT
+{
+  STEP=1e-06
+  {COUNT[AMPAR_O1,WORLD]}=> "./react_data/seed_" & seed & "/AMPAR_O1.World.dat"
+  {COUNT[AMPAR_O2,WORLD]}=> "./react_data/seed_" & seed & "/AMPAR_O2.World.dat"
+  {COUNT[Glu,Scene.psd]}=> "./react_data/seed_" & seed & "/Glu.psd.dat"
+  {COUNT[AMPAR_O3,WORLD]}=> "./react_data/seed_" & seed & "/AMPAR_O3.World.dat"
+  {COUNT[AMPAR_O4,WORLD]}=> "./react_data/seed_" & seed & "/AMPAR_O4.World.dat"
+  {COUNT[Glu,Scene.psd2]}=> "./react_data/seed_" & seed & "/Glu.psd2.dat"
+  {COUNT[Glu,WORLD]}=> "./react_data/seed_" & seed & "/Glu.World.dat"
+  {COUNT[AMPAR_C0,WORLD]}=> "./react_data/seed_" & seed & "/C0.World.dat"
+  {COUNT[AMPAR_C1,WORLD]}=> "./react_data/seed_" & seed & "/C1.World.dat"
+  {COUNT[AMPAR_C2,WORLD]}=> "./react_data/seed_" & seed & "/C2.World.dat"
+  {COUNT[AMPAR_D1,WORLD]}=> "./react_data/seed_" & seed & "/D1.World.dat"
+  {COUNT[AMPAR_D2,WORLD]}=> "./react_data/seed_" & seed & "/D2.World.dat"
+}
+

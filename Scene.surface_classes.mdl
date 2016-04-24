@@ -1,0 +1,12 @@
+DEFINE_SURFACE_CLASSES
+{
+  transp_Glu
+  {
+    TRANSPARENT = Glu;
+  }
+  reflect_Glu
+  {
+    REFLECTIVE = Glu;
+  }
+}
+
