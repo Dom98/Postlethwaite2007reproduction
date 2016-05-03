@@ -104,5 +104,5 @@ sprintf(seed,"%05g",SEED)
 
 INCLUDE_FILE = "Scene.viz_output.mdl"
 
-INCLUDE_FILE = "output_001_001.mdl"
+INCLUDE_FILE = "Scene.rxn_output.mdl"
 
